@@ -1,0 +1,30 @@
+from django.urls import path
+from lms_admin.views import *
+
+urlpatterns = [
+    path('login/', login_user, name='login'),
+    path('logout', logout_user, name='logout_user'),
+    # path('signup', signup_user, name='signup_user'),
+    path('dashboard/', dashboard, name='dashboard'),
+    path('category/', category, name='category'),
+    path('category/add', add_category, name='add_category'),
+    path('category/edit/<int:id>', edit_category, name='edit_category'),
+    path('category/delete/<int:id>', delete_category, name='delete_category'),
+    path('sub-category/', sub_category, name='sub_category'),
+    path('sub-category/add', add_sub_category, name='add_sub_category'),
+    path('sub-category/edit/<int:id>', edit_sub_category, name='edit_sub_category'),
+    path('sub-category/delete/<int:id>', delete_sub_category, name='delete_sub_category'),
+    path('blog/', blog, name='blog'),
+    path('blog/add', add_blog, name='add_blog'),
+    path('blog/edit/<int:id>', edit_blog, name='edit_blog'),
+    path('blog/delete/<int:id>', delete_blog, name='delete_blog'),
+    path('page/', page, name='page'),
+    path('page/add', add_page, name='add_page'),
+    path('page/edit/<int:id>', edit_page, name='edit_page'),
+    path('page/delete/<int:id>', delete_page, name='delete_page'),
+    path('course/', course, name='course'),
+    path('course/add', add_course, name='add_course'),
+    path('course/edit/<int:id>', edit_course, name='edit_course'),
+    path('course/delete/<int:id>', delete_course, name='delete_course'),
+    path('query/', query, name='query'),
+]

@@ -1,0 +1,31 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <div class="card-header">
+            <h5>Queries</h5>
+        </div>
+        <div class="table-responsive text-nowrap">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    {% for query in queries %}
+                    <tr>
+                        <td>{{ query.name }}</td>
+                        <td>{{ query.mobile }}</td>
+                        <td>{{ query.email }}</td>
+                        <td>{{ query.message }}</td>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock  %}
