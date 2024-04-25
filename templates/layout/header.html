@@ -1,0 +1,37 @@
+{% load static %}
+<header id="header" class="header shadow">
+    <nav class="container-xl d-flex align-items-center justify-content-between" style="margin-top: 25px;">
+        <div href="index.html" class="logo">
+            <span>FlexStart</span>
+        </div>
+        <div>
+            <a class="btnsam" href="#">Became an Instructor</a>
+        </div>
+    </nav>
+    <div class="container-xl d-flex align-items-center justify-content-end">
+        <div>
+        </div>
+    </div>
+    <div class="container-xl d-flex align-items-center justify-content-between">
+        <nav id="navbar" class="navbar navbar-expand-lg" style="z-index: 10000;">
+            <ul>
+                <li><a class="nav-link scrollto active" href="{% url "index" %}">Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        {% for category in categories %}
+                            <li><a href="#">{{ category.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="{% url "courses" %}">Course</a></li>
+                <li><a class="nav-link scrollto" href="{% url "blogs" %}">Blogs</a></li>
+                <li><a class="nav-link scrollto" href="{% url "about" %}">About Us</a></li>
+                <li><a class="nav-link scrollto" href="{% url "team" %}">Team</a></li>
+                <li><a class="nav-link scrollto" href="{% url "contact" %}">Contact Us</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+    </div>
+</header>

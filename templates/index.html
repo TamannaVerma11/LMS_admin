@@ -1,0 +1,237 @@
+{% extends "layout/app.html" %}
+{% load static %}
+{% block content %}
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+              <h1 data-aos="fade-up">
+                  We offer modern solutions
+                  <div>
+                      <a href="" class="typewrite" data-period="2000" data-type='[ "Motivated.", "Creative.", "Inspired."]'>
+                      <span class="wrap"></span>
+                      </a>
+                  </div>
+              </h1>
+              <h2 data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  expedita.
+              </h2>
+              <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="text-center text-lg-start">
+                      <a href="#about"
+                          class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                      <span>Get Started</span>
+                      <i class="bi bi-arrow-right"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-7 hero-img" data-aos="zoom-out" data-aos-delay="200">
+              <img src="{% static "frontend/img/3.png" %}" width="95%" class="img-fluid" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Hero -->
+<main id="main">
+  <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+          <header class="section-header">
+              <p>Our Achievers Work With</p>
+          </header>
+          <div class="row">
+              <div class="scroller" data-speed="fast">
+                  <ul class="tag-list scroller__inner">
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/569b8d9e-f368-47ff-8ae3-0057273be202.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/60fe2437-d9c8-4168-92bd-5aa0519c8208.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/4725350b-ecc1-47f7-b2e1-d9554ee40d17.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/39789ae1-8619-4bf3-ad48-f4f6ddde6623.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/f56ce398-f284-494a-9b75-3c18391071f4.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/fa92ca3a-0ccc-4359-8ba7-09a2fc949ea2.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                      <li>
+                          <img
+                              src="https://cdn.pwskills.com/assets/uploads/company_logos/2bd0586c-e303-4117-ad95-6b2962351353.png"
+                              alt="" style="width: 150px;"/>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- End slider Section -->
+  <!-- ======= Recent Course Section ======= -->
+  <section id="recent-blog-posts" class="recent-blog-posts">
+      <div class="container" data-aos="fade-up">
+          <header class="section-header">
+              <h2>Courses</h2>
+              <p>Recent Courses</p>
+          </header>
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="post-box">
+                      <div class="post-img"><img
+                          src="https://cdn.pwskills.com/assets/uploads/thumbnails/65cb022f7193890cbbf69f2e.png"
+                          class="img-fluid" alt=""></div>
+                      <span class="post-date">Tue, September 15</span>
+                      <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+                      <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+                          class="bi bi-arrow-right"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="post-box">
+                      <div class="post-img"><img
+                          src="https://cdn.pwskills.com/assets/uploads/thumbnails/6568179250c244fbec73aaf4.jpg"
+                          class="img-fluid" alt=""></div>
+                      <span class="post-date">Fri, August 28</span>
+                      <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+                      <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+                          class="bi bi-arrow-right"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="post-box">
+                      <div class="post-img"><img
+                          src="https://cdn.pwskills.com/assets/uploads/thumbnails/6566ef9250c24422ac733e11.jpg"
+                          class="img-fluid" alt=""></div>
+                      <span class="post-date">Mon, July 11</span>
+                      <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+                      <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i
+                          class="bi bi-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- End Recent Blog Posts Section -->
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+          <header class="section-header">
+              <h2>Feedback</h2>
+              <p>Student Feedback</p>
+          </header>
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                              quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                          </p>
+                          <div class="profile mt-auto">
+                              <img src="frontend/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                              <h3>Saul Goodman</h3>
+                              <!-- <h4>Ceo &amp; Founder</h4> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End testimonial item -->
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                          </p>
+                          <div class="profile mt-auto">
+                              <img src="frontend/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                              <h3>Sara Wilsson</h3>
+                              <!-- <h4>Designer</h4> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End testimonial item -->
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                              tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                          </p>
+                          <div class="profile mt-auto">
+                              <img src="frontend/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                              <h3>Jena Karlis</h3>
+                              <!-- <h4>Store Owner</h4> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End testimonial item -->
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                              minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                          </p>
+                          <div class="profile mt-auto">
+                              <img src="frontend/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                              <h3>Matt Brandon</h3>
+                              <!-- <h4>Freelancer</h4> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End testimonial item -->
+                  <div class="swiper-slide">
+                      <div class="testimonial-item">
+                          <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                              labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                          </p>
+                          <div class="profile mt-auto">
+                              <img src="frontend/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                              <h3>John Larson</h3>
+                              <!-- <h4>Entrepreneur</h4> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End testimonial item -->
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+  </section>
+  <!-- End Testimonials Section -->
+</main>
+{% endblock  %}

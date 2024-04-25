@@ -15,13 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, include
-from .views import index
+from .views import index, blogs, contact, courses, about, team, course_detail
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', include('lms_admin.urls')),
-    path('', index),
+    path('', index, name='index'),
+    path('blogs/', blogs, name='blogs'),
+    path('courses/', courses, name='courses'),
+    path('course/<int:id>', course_detail, name='course_detail'),
+    path('about/', about, name='about'),
+    path('team/', team, name='team'),
+    path('contact/', contact, name='contact'),
 ]
 
 if settings.DEBUG:
